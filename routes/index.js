@@ -23,7 +23,7 @@ router.get('/form', function(req, res, next) {
   res.render('form', {title: "New Message"});
 });
 
-router.post("/", function(req, res, next){
+router.post("/form", function(req, res, next){
   let message = req.body.message
   let username = req.body.username
   messages.push({
