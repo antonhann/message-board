@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= title
+  a(
+    href = "/form"
+  ) press me
+  div 
+    each message in messages
+      h1= message.user 
+      p= message.text 
+      p= message.date 
+    

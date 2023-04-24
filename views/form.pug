@@ -1,0 +1,22 @@
+extends layout 
+
+block content 
+    form(
+        method = "POST"
+        action = "/form"
+    )
+        label Enter Username: 
+        input(
+            type = 'text'
+            name = "username"
+            label = "Username"
+        ) 
+        label Enter message: 
+        input(
+            type = 'text'
+            name = "message"
+            label = "message"
+        )
+        button(
+            type = "submit"
+        ) submit 
